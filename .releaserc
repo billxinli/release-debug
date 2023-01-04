@@ -32,7 +32,7 @@
     }],
     "@semantic-release/github",
     ["@semantic-release/exec", {
-      "prepareCmd": "pwd; ls -la; TAG=v${nextRelease.version} bash .github/scripts/version.sh",
+      "prepareCmd": "pwd; ls -la; TAG=v${nextRelease.version} sh .github/scripts/version.sh",
     }],
   ]
 }
